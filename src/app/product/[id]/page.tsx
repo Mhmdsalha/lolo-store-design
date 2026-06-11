@@ -33,7 +33,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
           <div className="stitch-detail-grid">
             <article className="stitch-detail-card">
               <span>تفاصيل المنتج</span>
-              <h2>تصميم مريح يشبه شاشة Stitch</h2>
+              <h2>تصميم مريح للحركة اليومية</h2>
               <p>
                 {product.description} القصة ناعمة ومرنة للحركة اليومية، مع تفاصيل ملونة وخامة لطيفة على بشرة الأطفال.
               </p>

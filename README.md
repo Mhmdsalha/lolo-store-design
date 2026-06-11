@@ -1,6 +1,6 @@
 # LOLO Kids Store
 
-LOLO Kids Store is a polished Arabic-first ecommerce experience for a premium children’s boutique. The project translates a Stitch design concept into a production-ready Next.js application with responsive layouts, local typography, curated visual assets, animated hero elements, product browsing, product details, and cart interactions.
+LOLO Kids Store is a polished Arabic-first ecommerce experience for a premium children’s boutique. It provides a production-ready Next.js storefront with responsive layouts, local typography, curated visual assets, animated hero presentation, product browsing, product details, and cart interactions.
 
 ## Overview
 
@@ -12,7 +12,7 @@ This app is designed for a warm, refined children’s retail brand. The interfac
 - Premium animated homepage hero with high-resolution visual asset.
 - Category cards, age range sections, promotional banners, and trust badges.
 - Product listing pages with filtering and sorting controls.
-- Stitch-inspired product detail page with organic image gallery, thumbnails, pricing, size/color selection, quantity controls, and cart actions.
+- Rich product detail page with organic image gallery, thumbnails, pricing, size/color selection, quantity controls, and cart actions.
 - Client-side cart state powered by React context and persisted in local storage.
 - Custom Lenos font integration for brand-aligned Arabic typography.
 - Optimized Next.js image handling for local assets.
@@ -38,8 +38,7 @@ src/
   data/                 Mock catalog, categories, products, and age ranges
 public/
   fonts/                Local brand typography
-  images/               Store, Stitch, generated, category, banner, and product assets
-stitch-reference/       Exported Stitch reference screens
+  images/               Store, category, banner, and product assets
 ```
 
 ## Getting Started
@@ -90,10 +89,10 @@ Runs ESLint across the source directory with zero warnings allowed.
 
 ## Design Notes
 
-- The visual direction is based on a Stitch storefront concept and adapted into reusable Next.js components.
-- The homepage hero uses an organic image frame, floating animated feature cards, and a unified soft background.
-- Product detail pages follow the Stitch reference more closely, including the organic product image presentation and compact purchase panel.
-- Category and promotional imagery uses local Stitch-generated assets under `public/images/stitch`.
+- The visual direction is tailored for a premium children’s boutique with soft colors, warm imagery, and playful details.
+- The homepage hero uses a full mobile image treatment, centered messaging, and a transparent navigation state above the hero.
+- Product detail pages use an organic image presentation and compact purchase panel.
+- Category and promotional imagery uses local brand assets under `public/images`.
 
 ## Deployment
 

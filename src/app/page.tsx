@@ -9,11 +9,11 @@ export default function HomePage() {
   return (
     <main>
       <Hero />
+      <TrustBar />
       <CategoryStrip />
       <BestSellers />
       <PromoSection />
       <AgeRangeSection />
-      <TrustBar />
     </main>
   );
 }

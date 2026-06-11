@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { CartProvider } from "@/context/CartContext";
-import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { Header } from "@/components/layout/Header";
 
 const lenos = localFont({
   src: [
@@ -24,7 +24,7 @@ const lenos = localFont({
 
 export const metadata: Metadata = {
   title: "لولو | متجر أطفال",
-  description: "متجر عربي تجريبي لملابس وألعاب الأطفال مستوحى من تصميم Stitch.",
+  description: "متجر عربي لملابس وألعاب الأطفال بتجربة تسوق ناعمة وآمنة للعائلة.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -35,7 +35,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <Header />
           {children}
           <Footer />
-          <div className="portfolio-badge">معرض أعمال - تصميم تجريبي</div>
         </CartProvider>
       </body>
     </html>

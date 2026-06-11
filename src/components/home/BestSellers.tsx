@@ -1,6 +1,6 @@
-import { bestSellers } from "@/data/mock";
-import { ProductCard } from "@/components/ui/ProductCard";
 import { PrimaryButton } from "@/components/ui/PrimaryButton";
+import { ProductCard } from "@/components/ui/ProductCard";
+import { bestSellers } from "@/data/mock";
 
 export function BestSellers() {
   return (
@@ -9,7 +9,7 @@ export function BestSellers() {
         <div className="section-heading">
           <div>
             <h2>الأكثر مبيعًا</h2>
-            <p>أحدث صيحات الموضة للأطفال كما ظهرت في تصميم Stitch.</p>
+            <p>اختيارات محبوبة تجمع بين الراحة، الجودة، والتفاصيل اللطيفة للأطفال.</p>
           </div>
           <PrimaryButton href="/category/girls" variant="secondary">
             عرض الكل

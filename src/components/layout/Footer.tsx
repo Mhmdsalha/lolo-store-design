@@ -9,7 +9,9 @@ export function Footer() {
           <h3 className="logo" style={{ color: "#acc7ff" }}>
             لولو
           </h3>
-          <p style={{ color: "#cfdaf2", lineHeight: 1.9 }}>لأن كل طفل يستحق الأفضل، نصمم تجربة تسوق ناعمة وآمنة ومبهجة للعائلة.</p>
+          <p style={{ color: "#cfdaf2", lineHeight: 1.9 }}>
+            لأن كل طفل يستحق الأفضل، نقدم تجربة تسوق ناعمة وآمنة ومبهجة للعائلة.
+          </p>
         </div>
         <div>
           <h4>روابط</h4>
@@ -42,7 +44,7 @@ export function Footer() {
         </div>
       </div>
       <div className="container" style={{ color: "#cfdaf2", marginTop: "2rem", fontSize: "0.9rem" }}>
-        تصميم تجريبي مستوحى من مشروع Stitch رقم 9668317810268115180.
+        © 2026 لولو. جميع الحقوق محفوظة.
       </div>
     </footer>
   );

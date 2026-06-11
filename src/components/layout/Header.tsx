@@ -2,16 +2,43 @@
 
 import { Heart, Menu, Search, ShoppingBag, UserRound, X } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
-import { categories } from "@/data/mock";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import { useCart } from "@/context/CartContext";
+import { categories } from "@/data/mock";
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const [pastHero, setPastHero] = useState(false);
+  const pathname = usePathname();
   const { totalItems } = useCart();
+  const isHome = pathname === "/";
+  const transparent = isHome && !pastHero && !open;
+
+  useEffect(() => {
+    const updateHeaderState = () => {
+      if (!isHome) {
+        setPastHero(true);
+        return;
+      }
+
+      const hero = document.querySelector<HTMLElement>(".hero");
+      const threshold = hero ? Math.max(hero.offsetHeight - 92, 80) : 80;
+      setPastHero(window.scrollY > threshold);
+    };
+
+    updateHeaderState();
+    window.addEventListener("scroll", updateHeaderState, { passive: true });
+    window.addEventListener("resize", updateHeaderState);
+
+    return () => {
+      window.removeEventListener("scroll", updateHeaderState);
+      window.removeEventListener("resize", updateHeaderState);
+    };
+  }, [isHome]);
 
   return (
-    <header className="site-header">
+    <header className={`site-header ${transparent ? "is-transparent" : "is-solid"}`}>
       <div className="container nav-row">
         <Link className="logo" href="/" aria-label="لولو الرئيسية">
           لولو

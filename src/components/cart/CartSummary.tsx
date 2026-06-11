@@ -48,7 +48,7 @@ export function CartSummary() {
           تطبيق
         </button>
       </div>
-      {promoApplied ? <p style={{ color: "#0d5c46", fontWeight: 900 }}>تم تطبيق خصم تجريبي بنجاح</p> : null}
+      {promoApplied ? <p style={{ color: "#0d5c46", fontWeight: 900 }}>تم تطبيق خصم لولو بنجاح</p> : null}
       <button className="primary-button" style={{ width: "100%" }} type="button">
         إتمام الطلب
       </button>

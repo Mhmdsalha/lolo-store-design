@@ -1134,7 +1134,7 @@ button {
   }
 }
 
-/* Stitch parity refinements */
+/* Brand polish refinements */
 .hero {
   min-height: 680px;
   padding: 3rem 0 4.5rem;
@@ -1887,5 +1887,87 @@ button {
   .banner-overlay .secondary-button {
     min-height: 44px;
     padding: 0.72rem 1.05rem;
+  }
+}
+
+main {
+  padding-top: 76px;
+}
+
+.hero {
+  margin-top: -76px;
+  padding-top: calc(3rem + 76px);
+}
+
+.site-header {
+  position: fixed;
+  right: 50%;
+  left: auto;
+  transform: translateX(50%);
+  transition:
+    background 220ms ease,
+    border-color 220ms ease,
+    box-shadow 220ms ease,
+    backdrop-filter 220ms ease;
+}
+
+.site-header.is-transparent {
+  border-color: transparent;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.site-header.is-transparent .nav-row {
+  background: transparent;
+}
+
+.site-header.is-transparent .logo,
+.site-header.is-transparent .main-nav a {
+  color: #ffffff;
+  text-shadow: 0 3px 16px rgba(17, 28, 45, 0.42);
+}
+
+.site-header.is-transparent .main-nav a:first-child {
+  border-bottom-color: rgba(255, 255, 255, 0.78);
+}
+
+.site-header.is-transparent .header-search input,
+.site-header.is-transparent .icon-button {
+  border-color: rgba(255, 255, 255, 0.34);
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  box-shadow: none;
+  backdrop-filter: blur(14px);
+}
+
+.site-header.is-transparent .header-search input::placeholder,
+.site-header.is-transparent .header-search svg {
+  color: rgba(255, 255, 255, 0.86);
+}
+
+@media (max-width: 720px) {
+  main {
+    padding-top: 76px;
+  }
+
+  .hero {
+    min-height: 100svh;
+    margin-top: -76px;
+    padding: 0;
+  }
+
+  .hero-grid {
+    min-height: 100svh;
+    padding-top: calc(76px + 3rem);
+  }
+
+  .site-header.is-transparent .logo {
+    color: #ffffff;
+  }
+
+  .site-header.is-transparent .header-search input,
+  .site-header.is-transparent .icon-button {
+    background: rgba(255, 255, 255, 0.22);
   }
 }

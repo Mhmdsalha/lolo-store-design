@@ -1,10 +1,3 @@
-/*
-Image mapping from Stitch:
-- /images/stitch/logo.png: Stitch logo reference, kept for visual parity.
-- /images/stitch/hero-children.png: homepage hero image from Stitch.
-- /images/stitch/generated/*.png: standalone generated product/category/banner images from Stitch board.
-*/
-
 export type CategorySlug = "girls" | "boys" | "toys" | "shoes" | "accessories";
 export type AgeRange = "0-2 سنة" | "3-5 سنوات" | "6-9 سنوات" | "10+ سنوات";
 export type Size = "2T" | "3T" | "4T" | "5T" | "6T" | "8T" | "XS" | "S" | "M" | "L";

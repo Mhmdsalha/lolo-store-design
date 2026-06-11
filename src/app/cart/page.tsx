@@ -27,7 +27,7 @@ export default function CartPage() {
           <div className="section-heading" style={{ marginTop: "1rem" }}>
             <div>
               <h1 className="page-title">سلة لولو</h1>
-              <p>راجع المنتجات قبل إتمام الطلب التجريبي.</p>
+              <p>راجع المنتجات قبل إتمام الطلب.</p>
             </div>
           </div>
           <div className="cart-layout">
